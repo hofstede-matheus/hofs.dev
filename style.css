@@ -28,7 +28,11 @@
 
 .icon {
     margin: 24px;
-    ;
+}
+
+#title-projects {
+    font-size: x-large;
+    text-transform: uppercase;
 }
 
 html,
@@ -38,6 +42,7 @@ body {
     justify-content: center;
     height: 100%;
     background-color: #3a3a3a;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
