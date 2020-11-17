@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: row;
     width: auto;
+    list-style-type: none;
+    filter: contrast(10%) invert(1);
 }
 
 .icons-projects {
@@ -10,6 +12,7 @@
     width: auto;
     align-items: center;
     justify-content: center;
+    filter: contrast(10%) invert(1);
 }
 
 .main-container {
@@ -30,6 +33,10 @@
     margin: 24px;
 }
 
+.icon:hover {
+    filter: invert(1);
+}
+
 #title-projects {
     font-size: x-large;
     text-transform: uppercase;
@@ -41,7 +48,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%;
-    background-color: #3a3a3a;
+    background-color: #1d1d1d;
     font-family: 'Roboto', sans-serif;
 }
 
