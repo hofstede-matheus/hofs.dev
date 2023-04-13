@@ -1,7 +1,7 @@
 {
   "hosting": [
     {
-      "target": "site",
+      "target": "hofsdev",
       "public": "public",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
@@ -12,7 +12,7 @@
       ]
     },
     {
-      "target": "cv",
+      "target": "hofsdevcv",
       "public": "public/cv"
     }
   ]

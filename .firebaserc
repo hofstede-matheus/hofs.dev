@@ -5,10 +5,10 @@
   "targets": {
     "hofsdev": {
       "hosting": {
-        "site": [
+        "hofsdev": [
           "hofsdev"
         ],
-        "cv": [
+        "hofsdevcv": [
           "hofsdevcv"
         ]
       }
