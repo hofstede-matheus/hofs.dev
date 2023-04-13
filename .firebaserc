@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "hofsdev"
-  }
+  },
+  "targets": {
+    "hofsdev": {
+      "hosting": {
+        "site": [
+          "hofsdev"
+        ],
+        "cv": [
+          "hofsdevcv"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
