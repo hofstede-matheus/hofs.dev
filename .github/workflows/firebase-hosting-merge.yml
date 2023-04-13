@@ -19,7 +19,7 @@ jobs:
           target: site
           projectId: hofsdev
 
-  deploy_site:
+  deploy_cv:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
