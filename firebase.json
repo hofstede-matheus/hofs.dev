@@ -13,7 +13,14 @@
     },
     {
       "target": "hofsdevcv",
-      "public": "public/cv"
+      "public": "public/cv",
+      "redirects": [
+        {
+          "source": "/",
+          "destination": "/cv.pdf",
+          "type": 301
+        }
+      ]
     }
   ]
 }
