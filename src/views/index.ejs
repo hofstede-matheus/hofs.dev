@@ -1,49 +1,10 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>
-    CollectIn — LinkedIn Saved Posts Collection
-  </title>
-  <meta name="description" content="Turn your LinkedIn saved posts into neatly labeled collections. Inline badges, fast filters, and private local storage. No account required." />
-  <link rel="stylesheet" href="./assets/styles.css" />
-  <link rel="icon" href="./assets/icon-16.png" sizes="16x16" type="image/png">
-  <link rel="icon" href="./assets/icon-32.png" sizes="32x32" type="image/png">
-  <link rel="icon" href="./assets/icon-48.png" sizes="48x48" type="image/png">
-  <link rel="icon" href="./assets/icon-128.png" sizes="128x128" type="image/png">
-</head>
+<%- include('../partials/head') %>
 
   <body>
-    <header class="site-header">
-  <div class="container nav">
-    <a class="logo" href="#" aria-label="CollectIn home">
-      <img src="./assets/icon-32.png" alt="CollectIn logo" class="logo-icon">
-      <span class="logo-text">CollectIn</span>
-    </a>
-    <nav class="nav-links" aria-label="Primary">
-      
-        <a href="#features">
-          Features
-        </a>
-        
-        <a href="#how-it-works">
-          How it works
-        </a>
-        
-        <a href="#privacy">
-          Privacy
-        </a>
-        
-        <a href="#faq">
-          FAQ
-        </a>
-        
-    </nav>
-    <a class="button primary" href="#" id="cta-top">Add to Chrome</a>
-  </div>
-</header>
+    <%- include('../partials/header') %>
 
       <main>
         <section class="hero">
@@ -184,14 +145,7 @@
         </section>
       </main>
 
-      <footer class="site-footer">
-  <div class="container foot">
-    <div class="left">
-      <img src="./assets/icon-32.png" alt="CollectIn logo" class="logo-icon">
-    </div>
-    <div class="right muted">&copy; <span id="year">2025</span> — Not affiliated with LinkedIn.</div>
-  </div>
-</footer>
+      <%- include('../partials/footer') %>
   </body>
 
 </html>
