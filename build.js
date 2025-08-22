@@ -16,13 +16,7 @@ const PAGES = [
     data: {
       title: 'CollectIn — LinkedIn Saved Posts Collection',
       description: 'Turn your LinkedIn saved posts into neatly labeled collections. Inline badges, fast filters, and private local storage. No account required.',
-      baseUrl: '.',
-      navigation: [
-        { href: '#features', text: 'Features' },
-        { href: '#how-it-works', text: 'How it works' },
-        { href: '#privacy', text: 'Privacy' },
-        { href: '#faq', text: 'FAQ' }
-      ]
+      baseUrl: '.'
     }
   },
   {
@@ -31,13 +25,7 @@ const PAGES = [
     data: {
       title: 'Help - CollectIn — LinkedIn Saved Posts Collection',
       description: 'Help page for CollectIn, explaining each functionality of the app.',
-      baseUrl: '..',
-      navigation: [
-        { href: '#features', text: 'Features' },
-        { href: '#how-it-works', text: 'How it works' },
-        { href: '#faq', text: 'FAQ' },
-        { href: '#contact', text: 'Contact' }
-      ]
+      baseUrl: '..'
     }
   }
 ];

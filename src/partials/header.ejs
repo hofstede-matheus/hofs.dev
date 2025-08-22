@@ -5,11 +5,10 @@
       <span class="logo-text">CollectIn<%= title.includes('Help') ? ' Help' : '' %></span>
     </a>
     <nav class="nav-links" aria-label="Primary">
-      <% navigation.forEach(function(nav) { %>
-        <a href="<%= nav.href %>">
-          <%= nav.text %>
-        </a>
-        <% }); %>
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a href="<%= baseUrl %>/help/">Help</a>
     </nav>
     <a class="button primary" href="#" id="cta-top">Add to Chrome</a>
   </div>
