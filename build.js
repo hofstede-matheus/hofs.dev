@@ -29,6 +29,16 @@ const PAGES = [
       baseUrl: '.',
       isHome: false
     }
+  },
+  {
+    template: 'privacy.ejs',
+    output: 'privacy.html',
+    data: {
+      title: 'Privacy Policy | CollectIn',
+      description: 'Learn how CollectIn protects your privacy and handles your data. All data is stored locally in your browser.',
+      baseUrl: '.',
+      isHome: false
+    }
   }
 ];
 
