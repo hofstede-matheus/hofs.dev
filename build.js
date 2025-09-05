@@ -16,7 +16,18 @@ const PAGES = [
     data: {
       title: 'CollectIn — LinkedIn Saved Posts Collection',
       description: 'Turn your LinkedIn saved posts into neatly labeled collections. Inline badges, fast filters, and private local storage. No account required.',
-      baseUrl: '.'
+      baseUrl: '.',
+      isHome: true
+    }
+  },
+  {
+    template: '404.ejs',
+    output: '404.html',
+    data: {
+      title: '404 - Post Not Found | CollectIn',
+      description: 'Page not found - looks like this post went on a networking break!',
+      baseUrl: '.',
+      isHome: false
     }
   }
 ];

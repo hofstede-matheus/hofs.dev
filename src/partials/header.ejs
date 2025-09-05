@@ -1,13 +1,13 @@
 <header class="site-header">
   <div class="container nav">
-    <a class="logo" href="<%= baseUrl === '..' ? '..' : '#' %>" aria-label="CollectIn home">
+    <a class="logo" href="<%= isHome ? '#' : baseUrl + '/index.html' %>" aria-label="CollectIn home">
       <img src="<%= baseUrl %>/assets/icon-32.png" alt="CollectIn logo" class="logo-icon">
       <span class="logo-text">CollectIn<%= title.includes('Help') ? ' Help' : '' %></span>
     </a>
     <nav class="nav-links" aria-label="Primary">
-      <a href="#features">Features</a>
-      <a href="#how-it-works">How it works</a>
-      <a href="#faq">FAQ</a>
+      <a href="<%= isHome ? '#features' : baseUrl + '/index.html#features' %>">Features</a>
+      <a href="<%= isHome ? '#how-it-works' : baseUrl + '/index.html#how-it-works' %>">How it works</a>
+      <a href="<%= isHome ? '#faq' : baseUrl + '/index.html#faq' %>">FAQ</a>
     </nav>
     <a class="button primary" href="#" id="cta-top">Add to Chrome</a>
   </div>
