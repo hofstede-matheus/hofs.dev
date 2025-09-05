@@ -45,8 +45,7 @@ npm run dev
 ```
 ├── src/
 │   ├── views/
-│   │   ├── index.ejs          # Main landing page template
-│   │   └── help.ejs           # Help page template
+│   │   └── index.ejs          # Main landing page template
 │   └── partials/
 │       ├── head.ejs           # Common head section with meta tags
 │       ├── header.ejs         # Site header with navigation

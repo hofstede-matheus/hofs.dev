@@ -18,15 +18,6 @@ const PAGES = [
       description: 'Turn your LinkedIn saved posts into neatly labeled collections. Inline badges, fast filters, and private local storage. No account required.',
       baseUrl: '.'
     }
-  },
-  {
-    template: 'help.ejs',
-    output: 'help/index.html',
-    data: {
-      title: 'Help - CollectIn — LinkedIn Saved Posts Collection',
-      description: 'Help page for CollectIn, explaining each functionality of the app.',
-      baseUrl: '..'
-    }
   }
 ];
 
