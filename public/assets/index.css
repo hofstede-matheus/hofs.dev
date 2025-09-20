@@ -12,16 +12,16 @@
   --ink-900: #1f2328;
   --ink-700: #3d3d3d;
   --ink-500: #6b6f76;
-  --muted: #848d96;
+  --muted: #5f6368;
   --shadow: 0 16px 48px rgba(2, 34, 71, 0.24), 0 8px 24px rgba(2, 34, 71, 0.16);
   --radius-lg: 16px;
   --radius-md: 12px;
-  /* Feature card brand colors */
-  --feature-pink: #ff6f97;
-  --feature-green: #36d29f;
-  --feature-purple: #7d66ff;
-  --feature-teal: #2fc5ad;
-  --feature-blue: #5b63ff;
+  /* Feature card brand colors - Darker for better contrast with white text */
+  --feature-pink: #e91e63;
+  --feature-green: #009688;
+  --feature-purple: #5e35b1;
+  --feature-teal: #00695c;
+  --feature-blue: #3949ab;
   --feature-yellow: #ffd24d;
 }
 
