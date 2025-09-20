@@ -1,7 +1,10 @@
 <header class="site-header">
   <div class="container nav">
     <a class="logo" href="<%= isHome ? '#' : baseUrl + '/index.html' %>" aria-label="CollectIn home">
-      <img src="<%= baseUrl %>/assets/icon-48.png" alt="CollectIn logo" class="logo-icon">
+      <img src="<%= baseUrl %>/assets/icon-48.png" srcset="<%= baseUrl %>/assets/icon-16.png 16w, 
+                   <%= baseUrl %>/assets/icon-32.png 32w, 
+                   <%= baseUrl %>/assets/icon-48.png 48w, 
+                   <%= baseUrl %>/assets/icon-128.png 128w" sizes="48px" alt="CollectIn logo" class="logo-icon">
       <span class="logo-text">CollectIn<%= title.includes('Help') ? ' Help' : '' %></span>
     </a>
     <nav class="nav-links" aria-label="Primary">
