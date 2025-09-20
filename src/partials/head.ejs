@@ -5,8 +5,18 @@
     <%= title %>
   </title>
   <meta name="description" content="<%= description %>" />
-  <link rel="stylesheet"
-    href="<%= baseUrl %>/assets/<%= typeof pageType !== 'undefined' && pageType === 'privacy' ? 'privacy.css' : 'index.css' %>" />
+
+  <!-- Preconnect to external domains for faster loading -->
+  <link rel="preconnect" href="https://chromewebstore.google.com">
+
+  <!-- Non-blocking CSS loading for better performance -->
+  <link rel="preload"
+    href="<%= baseUrl %>/assets/<%= typeof pageType !== 'undefined' && pageType === 'privacy' ? 'privacy.css' : 'index.css' %>"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+      href="<%= baseUrl %>/assets/<%= typeof pageType !== 'undefined' && pageType === 'privacy' ? 'privacy.css' : 'index.css' %>">
+  </noscript>
   <% if (typeof additionalCSS !=='undefined' ) { %>
     <%- additionalCSS %>
       <% } %>
