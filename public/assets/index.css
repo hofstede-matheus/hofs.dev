@@ -485,9 +485,11 @@ p {
 }
 .foot a {
   color: var(--ink-900);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
 .foot a:hover {
   color: var(--li-blue);
-  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
