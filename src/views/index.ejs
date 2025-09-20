@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
 
-<%- include('../partials/head', { title: title, description: description, baseUrl: baseUrl }) %>
+<%- include('../partials/head', { title: title, description: description, baseUrl: baseUrl, pageType: 'index' }) %>
 
   <body>
-    <%- include('../partials/header') %>
+    <%- include('../partials/header', { isHome: true, baseUrl: baseUrl, title: title }) %>
 
       <main>
         <section class="hero">
@@ -14,7 +14,9 @@
               <p class="lead">Organize your LinkedIn saved posts into collections, just like you would do in Instagram.
               </p>
               <div class="cta-row">
-                <a class="button primary large" href="#">Add to Chrome</a>
+                <a class="button primary large"
+                  href="https://chromewebstore.google.com/detail/alfloghadjklabbfhilpnahjhiaadimh?utm_source=item-share-cb">Add
+                  to Chrome</a>
               </div>
             </div>
 
@@ -185,7 +187,9 @@
           <div class="container cta-box">
             <h2>Get organized in minutes</h2>
             <p>Install the extension and bring order to your LinkedIn saves.</p>
-            <a class="button primary large" href="#">Add to Chrome</a>
+            <a class="button primary large"
+              href="https://chromewebstore.google.com/detail/alfloghadjklabbfhilpnahjhiaadimh?utm_source=item-share-cb">Add
+              to Chrome</a>
           </div>
         </section>
 

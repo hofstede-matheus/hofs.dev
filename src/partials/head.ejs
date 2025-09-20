@@ -5,7 +5,8 @@
     <%= title %>
   </title>
   <meta name="description" content="<%= description %>" />
-  <link rel="stylesheet" href="<%= baseUrl %>/assets/styles.css" />
+  <link rel="stylesheet"
+    href="<%= baseUrl %>/assets/<%= typeof pageType !== 'undefined' && pageType === 'privacy' ? 'privacy.css' : 'index.css' %>" />
   <% if (typeof additionalCSS !=='undefined' ) { %>
     <%- additionalCSS %>
       <% } %>

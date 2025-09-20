@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
 
-<%- include('../partials/head', { title: title, description: description, baseUrl: baseUrl }) %>
+<%- include('../partials/head', { title: title, description: description, baseUrl: baseUrl, pageType: 'privacy' }) %>
 
   <body>
-    <%- include('../partials/header') %>
+    <%- include('../partials/header', { isHome: false, baseUrl: baseUrl, title: title }) %>
 
       <main>
         <section class="privacy-hero">
