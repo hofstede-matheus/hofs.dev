@@ -21,6 +21,16 @@ const PAGES = [
     }
   },
   {
+    template: 'premium.ejs',
+    output: 'premium.html',
+    data: {
+      title: 'CollectIn Premium — AI-Powered LinkedIn Saved Posts Organization',
+      description: 'Unlock premium features for CollectIn: AI categorization and advanced filtering for your LinkedIn saved posts collections.',
+      baseUrl: '.',
+      isHome: false
+    }
+  },
+  {
     template: '404.ejs',
     output: '404.html',
     data: {

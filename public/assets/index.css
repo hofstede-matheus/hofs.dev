@@ -163,6 +163,13 @@ p {
   font-size: clamp(1.6rem, 3vw, 2rem);
 }
 
+.section-header p {
+  text-align: center;
+  margin: 0 0 28px;
+  font-size: 1.2rem;
+  color: var(--ink-700);
+}
+
 /* Features */
 .features {
   padding: 60px 0;
