@@ -1,0 +1,41 @@
+name: Deploy beta-landing
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'apps/beta-landing/**'
+      - 'packages/**'
+      - 'pnpm-lock.yaml'
+      - 'firebase.json'
+      - '.firebaserc'
+      - '.github/workflows/deploy-beta-landing.yml'
+
+concurrency:
+  group: deploy-beta-landing
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm turbo build --filter=@hofs.dev/beta-landing
+
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_HOFSDEV }}
+          channelId: live
+          target: beta-hofsdev
+          projectId: hofsdev

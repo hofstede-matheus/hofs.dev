@@ -1,0 +1,43 @@
+name: Deploy het-or-de-web
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'apps/het-or-de-web/**'
+      - 'packages/**'
+      - 'pnpm-lock.yaml'
+      - 'firebase.json'
+      - '.firebaserc'
+      - '.github/workflows/deploy-het-or-de-web.yml'
+
+concurrency:
+  group: deploy-het-or-de-web
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm turbo build --filter=@hofs.dev/het-or-de-web
+
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_HOFSDEV }}
+          channelId: live
+          target: het-or-de-web-hofsdev
+          projectId: hofsdev
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks

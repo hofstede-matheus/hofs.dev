@@ -1,0 +1,39 @@
+name: Deploy linkedin-saved-posts-collections-landing-page
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'apps/linkedin-saved-posts-collections-landing-page/**'
+      - 'firebase.json'
+      - '.firebaserc'
+      - '.github/workflows/deploy-linkedin-saved-posts-collections-landing-page.yml'
+
+concurrency:
+  group: deploy-linkedin-saved-posts-collections-landing-page
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm turbo build --filter=@hofs.dev/linkedin-saved-posts-collections-landing-page
+
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_HOFSDEV }}
+          channelId: live
+          target: linkedin-saved-posts-collections-landing-page
+          projectId: hofsdev
