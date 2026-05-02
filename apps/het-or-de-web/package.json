@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "cd ../.. && pnpm install --frozen-lockfile && pnpm --filter @hofs.dev/het-or-de-web next build",
     "start": "next start",
     "lint": "next lint",
     "check-types": "tsc --noEmit"
