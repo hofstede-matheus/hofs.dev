@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<%- include('../partials/head', { title: 'CollectIn Premium — AI-Powered LinkedIn Saved Posts Organization' ,
+  description: 'Unlock premium features for CollectIn: AI categorization and advanced filtering for your LinkedIn saved posts collections.'
+  , baseUrl: baseUrl, pageType: 'index' }) %>
+
+  <body>
+    <%- include('../partials/header', { isHome: false, baseUrl: baseUrl, title: title }) %>
+
+      <main>
+        <section id="premium" class="features-help">
+          <div class="container">
+            <div class="section-header">
+              <h2>Categorize with AI</h2>
+              <p>Have hundreds of saved posts? Let AI categorize them for you.</p>
+            </div>
+            <div class="feature-help-grid">
+              <div class="feature-help">
+                <h3>1. Scan step</h3>
+                <video width="100%" height="auto" autoplay muted playsinline loop class="hero-video">
+                  <source src="assets/premium-scan.webm" type="video/mp4">
+                  <track kind="captions" srclang="en" label="English captions" default>
+                  Your browser does not support the video tag.
+                </video>
+                <p>CollectIn must find all your saved posts to categorize them. Start the scan and the extension will
+                  scroll down automatically to find every post. Please stay on the page while the scan is running.</p>
+              </div>
+              <div class="feature-help">
+                <h3>2. Categorize step</h3>
+                <video width="100%" height="auto" autoplay muted playsinline loop class="hero-video">
+                  <source src="assets/premium-categorize.webm" type="video/mp4">
+                  <track kind="captions" srclang="en" label="English captions" default>
+                  Your browser does not support the video tag.
+                </video>
+                <p>With your posts scanned, CollectIn will do the hard work to categorize them for you. It may take a
+                  minute or two to complete, so please be patient.</p>
+              </div>
+              <div class="feature-help">
+                <h3>3. Adjust categories</h3>
+                <video width="100%" height="auto" autoplay muted playsinline loop class="hero-video">
+                  <source src="assets/premium-update-categories.webm" type="video/mp4">
+                  <track kind="captions" srclang="en" label="English captions" default>
+                  Your browser does not support the video tag.
+                </video>
+                <p>Not happy with the categories? No problem. You can adjust them to your liking. Hold the category name
+                  to
+                  edit it. Move posts between categories by dragging and dropping (coming soon).</p>
+              </div>
+              <div class="feature-help">
+                <h3>4. Save and enjoy</h3>
+                <video width="100%" height="auto" autoplay muted playsinline loop class="hero-video">
+                  <source src="assets/premium-save.webm" type="video/mp4">
+                  <track kind="captions" srclang="en" label="English captions" default>
+                  Your browser does not support the video tag.
+                </video>
+                <p>That's it! You can now enjoy your organized posts. Click on the "Apply categorization and reload
+                  page" to see your posts organized in the new categories.</p>
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="section-header">
+              <h2>Advanced filtering</h2>
+              <p>Filter by author and date in a side panel interface. This allows a more fluid and intuitive experience
+                than the current LinkedIn's saved posts page with extra features.</p>
+            </div>
+            <div class="feature-help-grid">
+              <div class="feature-help">
+                <h3>Coming Soon</h3>
+                <video width="100%" height="auto" autoplay muted playsinline loop class="hero-video">
+                  <source src="assets/advanced-filtering.webm" type="video/mp4">
+                  <track kind="captions" srclang="en" label="English captions" default>
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+        </section>
+
+        <section class="cta">
+          <div class="container cta-box">
+            <h2>Upgrade to Premium</h2>
+            <p>Unlock AI-powered categorization and advanced filtering for your LinkedIn collections.</p>
+            <a class="button primary large" href="https://www.linkedin.com/my-items/saved-posts/?savedPostType=ALL"
+              target="_blank" rel="noopener noreferrer">Open
+              saved posts page and click on the <span class="icon-magic">🪄</span> icon.</a>
+          </div>
+        </section>
+      </main>
+
+      <%- include('../partials/footer') %>
+  </body>
+
+</html>

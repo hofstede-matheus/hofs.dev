@@ -1,0 +1,7 @@
+{
+  "hosting": {
+    "site": "linkedin-saved-posts-collections-landing-page",
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}

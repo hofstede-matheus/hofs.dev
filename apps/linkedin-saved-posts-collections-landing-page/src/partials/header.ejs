@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="<%= isHome ? '#' : baseUrl + '/index.html' %>" aria-label="CollectIn home">
+      <img src="<%= baseUrl %>/assets/icon-48.png" srcset="<%= baseUrl %>/assets/icon-16.png 16w, 
+                   <%= baseUrl %>/assets/icon-32.png 32w, 
+                   <%= baseUrl %>/assets/icon-48.png 48w, 
+                   <%= baseUrl %>/assets/icon-128.png 128w" sizes="48px" alt="CollectIn logo" class="logo-icon">
+      <span class="logo-text">CollectIn<%= title.includes('Help') ? ' Help' : '' %></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="<%= isHome ? '#features' : baseUrl + '/index.html#features' %>">Features</a>
+      <a href="<%= isHome ? '#premium' : baseUrl + '/index.html#premium' %>">Premium</a>
+      <a href="<%= isHome ? '#how-it-works' : baseUrl + '/index.html#how-it-works' %>">How it works</a>
+      <a href="<%= isHome ? '#faq' : baseUrl + '/index.html#faq' %>">FAQ</a>
+    </nav>
+    <a class="button primary"
+      href="https://chromewebstore.google.com/detail/alfloghadjklabbfhilpnahjhiaadimh?utm_source=item-share-cb"
+      id="cta-top">Add to Chrome</a>
+  </div>
+</header>

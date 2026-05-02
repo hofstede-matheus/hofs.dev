@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<%- include('../partials/head', { title: title, description: description, baseUrl: baseUrl,
+  additionalCSS: '<link rel="stylesheet" href="assets/404.css">' }) %>
+
+  <body>
+    <%- include('../partials/header') %>
+
+      <main>
+        <section class="error-container">
+          <div class="container">
+            <div class="error-animation">
+              <h1 class="big-404">404</h1>
+            </div>
+
+            <h2 class="error-title">Oops! This post seems to be uncollected</h2>
+
+            <p class="error-message">
+              Looks like this page went on a networking break and forgot to save itself to a collection! Please go to
+              the home page.
+            </p>
+
+            <div class="search-simulation">
+              <div class="search-bar">
+                <span class="search-icon">🔍</span>
+                <span class="search-text">Searching for your page<span class="loading-dots"></span></span>
+                <span class="typing-indicator"></span>
+              </div>
+            </div>
+
+
+          </div>
+        </section>
+      </main>
+
+      <%- include('../partials/footer') %>
+        <script>
+          // Simulate typing in search bar
+          const searchText = document.querySelector('.search-text');
+          const phrases = [
+            'Searching for your page',
+            'Looking through collections',
+            'Checking saved posts',
+            'Organizing the chaos',
+            'Finding your content'
+          ];
+
+          let currentPhrase = 0;
+
+          setInterval(() => {
+            currentPhrase = (currentPhrase + 1) % phrases.length;
+            searchText.innerHTML = phrases[currentPhrase] + '<span class="loading-dots"></span>';
+          }, 4000);
+        </script>
+  </body>
+
+</html>

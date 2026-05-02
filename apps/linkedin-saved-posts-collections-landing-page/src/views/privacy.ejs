@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<%- include('../partials/head', { title: title, description: description, baseUrl: baseUrl, pageType: 'privacy' }) %>
+
+  <body>
+    <%- include('../partials/header', { isHome: false, baseUrl: baseUrl, title: title }) %>
+
+      <main>
+        <section class="privacy-hero">
+          <div class="container">
+            <div class="hero-copy">
+              <h1>Privacy Policy</h1>
+              <p class="lead">Learn how CollectIn protects your privacy and handles your data.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="privacy-content">
+          <div class="container">
+            <div class="privacy-text">
+              <p class="last-updated"><strong>Last updated:</strong> September 2025</p>
+
+              <article>
+                <h2>Overview</h2>
+                <p>CollectIn is a browser extension that helps you organize your LinkedIn saved posts into collections.
+                  We are committed to protecting your privacy and being transparent about how our extension works.</p>
+                <p><strong>The short version:</strong> CollectIn stores all your data locally in your browser and never
+                  sends any information to external servers.</p>
+              </article>
+
+              <article>
+                <h2>Information We Collect and Store</h2>
+                <h3>Local Browser Storage Only</h3>
+                <p>CollectIn stores the following information locally in your browser's storage:</p>
+                <ul>
+                  <li><strong>Collection names:</strong> The names you give to your post collections</li>
+                  <li><strong>Post assignments:</strong> Which posts belong to which collections</li>
+                  <li><strong>Extension preferences:</strong> Your settings and preferences for how the extension
+                    behaves</li>
+                </ul>
+                <p>This data is stored using your browser's local storage mechanisms and never leaves your device.</p>
+
+                <h3>Information We Do NOT Collect</h3>
+                <p>CollectIn does not collect, access, store, or transmit:</p>
+                <ul>
+                  <li>Your LinkedIn login credentials or authentication tokens</li>
+                  <li>The content of your LinkedIn posts or messages</li>
+                  <li>Your LinkedIn profile information</li>
+                  <li>Your browsing history outside of LinkedIn</li>
+                  <li>Any personally identifiable information</li>
+                  <li>Analytics or usage data</li>
+                </ul>
+              </article>
+
+              <article>
+                <h2>How We Use Your Information</h2>
+                <p>The information stored locally by CollectIn is used solely to:</p>
+                <ul>
+                  <li>Display your collections in LinkedIn's saved posts interface</li>
+                  <li>Remember which posts belong to which collections</li>
+                  <li>Provide filtering functionality based on your collections</li>
+                  <li>Maintain your extension preferences</li>
+                </ul>
+                <p>Since all data is stored locally, we have no access to your information and cannot use it for any
+                  other purposes.</p>
+              </article>
+
+              <article>
+                <h2>Data Sharing and Third Parties</h2>
+                <p>CollectIn does not share any data with third parties because:</p>
+                <ul>
+                  <li>All data is stored locally in your browser</li>
+                  <li>No data is transmitted to our servers or any external services</li>
+                  <li>We do not have access to your data</li>
+                  <li>We do not use analytics services or tracking</li>
+                </ul>
+              </article>
+
+              <article>
+                <h2>LinkedIn Integration</h2>
+                <p>CollectIn operates by:</p>
+                <ul>
+                  <li><strong>Reading the DOM:</strong> The extension reads LinkedIn's webpage structure to identify
+                    saved posts and add collection features</li>
+                  <li><strong>Modifying the interface:</strong> Adding collection badges, filters, and management tools
+                    to LinkedIn's existing interface</li>
+                  <li><strong>No API calls:</strong> We do not make any calls to LinkedIn's API or any external APIs
+                  </li>
+                  <li><strong>No account access:</strong> We never access your LinkedIn account, authentication, or
+                    perform actions on your behalf</li>
+                </ul>
+                <p>The extension only enhances the visual presentation of LinkedIn's saved posts page and does not
+                  interact with LinkedIn's servers.</p>
+              </article>
+
+              <article>
+                <h2>Data Security</h2>
+                <p>Since all data is stored locally in your browser:</p>
+                <ul>
+                  <li>Your data is protected by your browser's security mechanisms</li>
+                  <li>Data is not transmitted over the internet</li>
+                  <li>No risk of server breaches or external data theft</li>
+                  <li>You maintain complete control over your data</li>
+                </ul>
+              </article>
+
+              <article>
+                <h2>Data Retention and Deletion</h2>
+                <p>Your collection data is retained locally until:</p>
+                <ul>
+                  <li>You uninstall the CollectIn extension</li>
+                  <li>You clear your browser's local storage/data</li>
+                  <li>You manually delete collections within the extension</li>
+                </ul>
+                <p>If you uninstall CollectIn, all associated data will be removed from your browser. Your LinkedIn
+                  saved posts will remain unchanged in your LinkedIn account.</p>
+              </article>
+
+              <article>
+                <h2>Browser Permissions</h2>
+                <p>CollectIn requires minimal browser permissions:</p>
+                <ul>
+                  <li><strong>Access to linkedin.com:</strong> To modify the saved posts page interface</li>
+                  <li><strong>Storage permission:</strong> To save your collections locally in your browser</li>
+                </ul>
+                <p>We do not request permissions for:</p>
+                <ul>
+                  <li>Access to other websites</li>
+                  <li>Reading your browsing history</li>
+                  <li>Accessing your downloads or files</li>
+                  <li>Managing your apps, extensions, or themes</li>
+                </ul>
+              </article>
+
+              <article>
+                <h2>Children's Privacy</h2>
+                <p>CollectIn is not intended for use by children under 13 years of age. Since we do not collect any
+                  personal information, we do not knowingly collect personal information from children under 13.</p>
+              </article>
+
+              <article>
+                <h2>Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time. When we do, we will:</p>
+                <ul>
+                  <li>Update the "Last updated" date at the top of this policy</li>
+                  <li>Post the new Privacy Policy on this page</li>
+                  <li>For significant changes, provide notice through the extension or our website</li>
+                </ul>
+                <p>Your continued use of CollectIn after any changes indicates your acceptance of the updated Privacy
+                  Policy.</p>
+              </article>
+
+              <article>
+                <h2>Contact Information</h2>
+                <p>If you have any questions about this Privacy Policy or CollectIn's privacy practices, you can contact
+                  us:</p>
+                <ul>
+                  <li>Through the Chrome Web Store listing</li>
+                  <li>By visiting our help documentation</li>
+                </ul>
+                <p>Since CollectIn operates entirely locally and we don't collect personal data, most privacy-related
+                  questions can be answered by this policy.</p>
+              </article>
+
+              <article>
+                <h2>Disclaimer</h2>
+                <p>CollectIn is not affiliated with, endorsed by, or sponsored by LinkedIn Corporation. LinkedIn is a
+                  trademark of LinkedIn Corporation.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <%- include('../partials/footer') %>
+  </body>
+
+</html>

@@ -1,0 +1,261 @@
+/* 404 Page Styles */
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 160px);
+  padding: 2rem;
+  text-align: center;
+}
+
+.error-container .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-animation {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.floating-collections {
+}
+.collection-pill {
+}
+
+.big-404 {
+  font-size: clamp(4rem, 15vw, 8rem);
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--li-blue-400), var(--li-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.big-404::before {
+  content: "404";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    var(--feature-pink),
+    var(--feature-purple)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 2s ease-in-out infinite alternate;
+  opacity: 0.3;
+}
+
+.error-title {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin: 1rem 0;
+  color: var(--ink-900);
+}
+
+.error-message {
+  font-size: 1.2rem;
+  color: var(--ink-700);
+  margin: 1.5rem 0;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.search-simulation {
+  background: var(--li-surface);
+  border: 2px solid #e6e6e6;
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: var(--li-bg);
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.search-icon {
+  color: var(--muted);
+  margin-right: 0.5rem;
+}
+
+.search-text {
+  color: var(--ink-700);
+  flex: 1;
+}
+
+.typing-indicator {
+  display: inline-block;
+  width: 2px;
+  height: 1.2rem;
+  background: var(--li-blue);
+  animation: blink 1s infinite;
+  margin-left: 2px;
+}
+
+.search-results {
+  text-align: left;
+}
+
+.search-result {
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.search-result:nth-child(1) {
+  animation-delay: 1s;
+}
+.search-result:nth-child(2) {
+  animation-delay: 1.3s;
+}
+.search-result:nth-child(3) {
+  animation-delay: 1.6s;
+}
+
+.result-title {
+  font-weight: 600;
+  color: var(--ink-900);
+  margin: 0 0 0.25rem 0;
+}
+
+.result-meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.error-actions {
+}
+
+.easter-egg {
+}
+
+.fun-fact {
+}
+.fun-fact-title {
+}
+.fun-fact-text {
+}
+
+/* Animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes bounce {
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes wiggle {
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .floating-collections {
+  }
+  .collection-pill {
+  }
+  .error-actions {
+  }
+  .error-actions .button {
+  }
+  .easter-egg {
+  }
+}
+
+/* Loading state for search */
+.loading-dots {
+  display: inline-block;
+}
+
+.loading-dots::after {
+  content: "";
+  animation: dots 2s infinite;
+}
+
+@keyframes dots {
+  0%,
+  20% {
+    content: "";
+  }
+  40% {
+    content: ".";
+  }
+  60% {
+    content: "..";
+  }
+  80%,
+  100% {
+    content: "...";
+  }
+}
