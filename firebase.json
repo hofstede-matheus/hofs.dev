@@ -1,0 +1,50 @@
+{
+  "hosting": [
+    {
+      "site": "hofsdev",
+      "public": "apps/hofs.dev/public",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "site": "hofsdevcv",
+      "public": "apps/hofs.dev/public/cv",
+      "redirects": [
+        {
+          "source": "/",
+          "destination": "/cv.pdf",
+          "type": 301
+        }
+      ]
+    },
+    {
+      "site": "beta-hofsdev",
+      "public": "apps/beta-landing/build",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "site": "het-or-de-web-hofsdev",
+      "source": "apps/het-or-de-web",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "frameworksBackend": {
+        "region": "us-central1"
+      }
+    },
+    {
+      "site": "linkedin-saved-posts-collections-landing-page",
+      "public": "apps/linkedin-saved-posts-collections-landing-page/public",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    }
+  ]
+}
