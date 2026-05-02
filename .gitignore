@@ -64,3 +64,18 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+# Turbo
+.turbo/
+
+# Build outputs
+.next/
+build/
+dist/
+apps/*/build/
+apps/*/.next/
+apps/*/dist/
+apps/*/public/help/
+
+# pnpm
+pnpm-lock.yaml
