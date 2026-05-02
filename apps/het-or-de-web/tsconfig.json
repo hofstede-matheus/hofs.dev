@@ -1,6 +1,7 @@
 {
   "extends": "@hofs.dev/typescript-config/nextjs.json",
   "compilerOptions": {
+    "types": ["node", "react", "react-dom"],
     "paths": {
       "@/*": ["./src/*"]
     }
