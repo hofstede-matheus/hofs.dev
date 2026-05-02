@@ -31,6 +31,8 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       - run: pnpm turbo build --filter=@hofs.dev/beta-landing
+        env:
+          CI: "false"
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
