@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "hofsdev"
+  },
+  "targets": {
+    "hofsdev": {
+      "hosting": {
+        "beta-hofsdev": [
+          "beta-hofsdev"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
