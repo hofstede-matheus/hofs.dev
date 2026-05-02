@@ -1,5 +1,5 @@
 {
-  "name": "linkedin-saved-posts-collections-landing-page",
+  "name": "@hofs.dev/linkedin-saved-posts-collections-landing-page",
   "version": "1.0.0",
   "description": "Landing page for CollectIn LinkedIn extension",
   "main": "build.js",
