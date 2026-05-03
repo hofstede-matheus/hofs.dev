@@ -33,10 +33,5 @@
         }
       ]
     },
-    {
-      "site": "linkedin-saved-posts-collections-landing-page",
-      "public": "apps/linkedin-saved-posts-collections-landing-page/public",
-      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
-    }
   ]
 }
