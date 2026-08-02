@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title">
+  <title id="title">Nomad Screen</title>
+  <rect x="20" y="28" width="120" height="88" rx="8" fill="none" stroke="#000" stroke-width="10"/>
+  <path d="M52 140h56M80 116v24" fill="none" stroke="#000" stroke-linecap="round" stroke-width="10"/>
+  <path d="M51 86V58l28 28 30-34v36" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+</svg>
